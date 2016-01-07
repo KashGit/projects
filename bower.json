@@ -1,0 +1,14 @@
+{
+  "name": "StudentPitStop",
+  "version": "0.0.1",
+  "description": "Student Portal",
+  "authors": [
+    "Kash"
+  ],
+  "license": "MIT",
+  "dependencies": {
+    "angular": "~1.4.3",
+    "angular-bootstrap": "~0.13.2",
+    "angular-ui-router": "~0.2.15"
+  }
+}
