@@ -60,6 +60,39 @@ article,aside,details,header {display:block;}
 		</ul>
 		<!-- Horizontal Menu with Nav -->
 		<ul class="nav nav-pills">		 
+		    <li class="active"><a href="#home" ng-click="tabSel=0">Home</a></li>
+			<li><a href="#about" ng-click="tabSel=1">About</a></li>
+			<li class="dropdown" dropdown>
+			    <a href="home" dropdown-toggle>Colleges<span class="caret"></span></a>			    
+			        <ul class="dropdown-menu">
+				        <li><a href="#mba" ng-click="tabSel=2">MBA</a></li>
+						<li><a href="#mba" ng-click="tabSel=2">MBA</a></li>
+						<li><a href="#mba" ng-click="tabSel=2">MBA</a></li>
+				    </ul>			    
+			</li>
+			<li><a href="#contact" ng-click="tabSel=3">Contact</a></li>
+		</ul>
+		
+		<div class="tab-content">
+		     <div id="home" class="tab-pane fade in" ng-class="{'active':tabSel===0}">
+			 <h4>Home</h4>
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit laoreet tempor. Proin eget erat sit amet urna rutrum consectetur et ac felis. Etiam quis cursus urna. Sed cursus cursus arcu, eget condimentum elit tempus sit amet. Nulla facilisi. Aliquam dui ipsum, sollicitudin at est vitae, luctus commodo dolor. Proin tellus ipsum, rutrum sit amet ipsum mollis, blandit vestibulum ligula. Nulla finibus egestas vehicula. Suspendisse efficitur dictum lobortis. Nulla purus est, efficitur eget nulla sit amet, convallis pulvinar turpis. Aliquam erat volutpat. Duis vitae consectetur tellus, non facilisis nulla. </p>
+			 </div>
+			  <div id="about" class="tab-pane fade in" ng-class="{'active':tabSel===1}">
+			 <h4>About</h4>
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit laoreet tempor. Proin eget erat sit amet urna rutrum consectetur et ac felis. Etiam quis cursus urna. Sed cursus cursus arcu, eget condimentum elit tempus sit amet. Nulla facilisi. Aliquam dui ipsum, sollicitudin at est vitae, luctus commodo dolor. Proin tellus ipsum, rutrum sit amet ipsum mollis, blandit vestibulum ligula. Nulla finibus egestas vehicula. Suspendisse efficitur dictum lobortis. Nulla purus est, efficitur eget nulla sit amet, convallis pulvinar turpis. Aliquam erat volutpat. Duis vitae consectetur tellus, non facilisis nulla. </p>
+			 </div>
+			  <div id="mba" class="tab-pane fade in" ng-class="{'active':tabSel===2}">
+			 <h4>Colleges-MBA</h4>
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit laoreet tempor. Proin eget erat sit amet urna rutrum consectetur et ac felis. Etiam quis cursus urna. Sed cursus cursus arcu, eget condimentum elit tempus sit amet. Nulla facilisi. Aliquam dui ipsum, sollicitudin at est vitae, luctus commodo dolor. Proin tellus ipsum, rutrum sit amet ipsum mollis, blandit vestibulum ligula. Nulla finibus egestas vehicula. Suspendisse efficitur dictum lobortis. Nulla purus est, efficitur eget nulla sit amet, convallis pulvinar turpis. Aliquam erat volutpat. Duis vitae consectetur tellus, non facilisis nulla. </p>
+			 </div>
+			  <div id="contact" class="tab-pane fade in" ng-class="{'active':tabSel===3}">
+			 <h4>Contact Us</h4>
+			 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis hendrerit laoreet tempor. Proin eget erat sit amet urna rutrum consectetur et ac felis. Etiam quis cursus urna. Sed cursus cursus arcu, eget condimentum elit tempus sit amet. Nulla facilisi. Aliquam dui ipsum, sollicitudin at est vitae, luctus commodo dolor. Proin tellus ipsum, rutrum sit amet ipsum mollis, blandit vestibulum ligula. Nulla finibus egestas vehicula. Suspendisse efficitur dictum lobortis. Nulla purus est, efficitur eget nulla sit amet, convallis pulvinar turpis. Aliquam erat volutpat. Duis vitae consectetur tellus, non facilisis nulla. </p>
+			 </div>
+		</div>
+		<!-- Vertical Stacked Menu Nav -->
+		<ul class="nav nav-pills nav-stacked">		 
 		    <li class="active"><a href="home">Home</a></li>
 			<li><a href="home">About</a></li>
 			<li class="dropdown" dropdown>

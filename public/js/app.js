@@ -34,4 +34,8 @@ angular.module('app').controller('mainCtrl', function ($scope) {
     $event.stopPropagation();
     $scope.status.isopen = !$scope.status.isopen;
     };
+	
+	//tab code
+	$scope.tabSel = 0;
+	console.log($scope.tabSel);
 });
